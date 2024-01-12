@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <style>
+        body{font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+        *{
+            margin: auto;
+        }
+        input[type=text], input[type=password] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+          }
+          
+          input[type=text]:focus, input[type=password]:focus {
+            background-color: #ddd;
+            outline: none;
+          }
+          
+          hr {
+            border: 1px solid #f1f1f1;
+            margin-bottom: 25px;
+          }
+          
+   
+          button {
+            background-color: #04AA6D;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 50%;
+            opacity: 0.9;
+          }
+          
+          button:hover {
+            opacity:1;
+          }
+          
+          
+          .cancelbtn {
+            padding: 14px 20px;
+            background-color: #f44336;
+          }
+          
+          
+          .cancelbtn, .signupbtn {
+            float: left;
+            width: 50%;
+          }
+          
+        
+          .container {
+            padding: 16px;
+            width: 300px;
+          }
+        
+          .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+          }
+          
+          
+          @media screen and (max-width: 300px) {
+            .cancelbtn, .signupbtn {
+               width: 100%;
+            }
+            .circle{
+                border: 1px solid black;
+            }
+          }
+          
+    </style>
+</head>
+<body>
+    <form action="/signup.html" style="border: 1px solid black;">
+        
+        <div class="container">
+        <h1>Sign up</h1>
+        <p>please fill ypur details and be a part of techno mart</p>
+        <hr>
+        <label for="name"><b>Name</b></label>
+        <input type="text" placeholder="Enter your name" required>
+        <label for="email"><b>Email Id </b></label>
+        <input type="text" placeholder="Enter your email" required>
+        <label for="password"><b>Create a new password</b></label><br>
+        <input type="password" placeholder="enter password" required>
+        <label for="repeat" ><b>Repeat password </b></label>
+        <input type="password" placeholder="Re-enter password" required>
+        <label>
+            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px;">Remember me
+        </label>
+        <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms&policy</a></p>
+        <p>Aldready have an account? <a href="./signin.html">signin</a></p>
+        <div class="clearfix">
+        <button type="button" class="cancelbtn">cancel</button>
+        <button type="submit" class="signup">submit</button>
+        </div>
+        
+        </div>
+    </form>
+</body>
+</html>
